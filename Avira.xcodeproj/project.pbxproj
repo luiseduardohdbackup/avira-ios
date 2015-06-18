@@ -18,6 +18,9 @@
 		905615011B32CE7E00C24CE1 /* AVTilesMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615001B32CE7E00C24CE1 /* AVTilesMenuViewController.m */; };
 		905615051B32CF8B00C24CE1 /* AVAviraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615041B32CF8B00C24CE1 /* AVAviraViewController.m */; };
 		905615081B32D0ED00C24CE1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615071B32D0ED00C24CE1 /* Constants.m */; };
+		905615101B32E32E00C24CE1 /* AVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9056150F1B32E32E00C24CE1 /* AVBaseView.m */; };
+		905615131B32E33D00C24CE1 /* AVTilesMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615121B32E33D00C24CE1 /* AVTilesMenuView.m */; };
+		905615151B32E37000C24CE1 /* AVTilesMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 905615141B32E37000C24CE1 /* AVTilesMenuView.xib */; };
 		B83CDBCB7BB88D18010AB7DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D169630E4CA1DEDE00A34E59 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,11 @@
 		905615041B32CF8B00C24CE1 /* AVAviraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAviraViewController.m; sourceTree = "<group>"; };
 		905615061B32D09C00C24CE1 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		905615071B32D0ED00C24CE1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		9056150E1B32E32E00C24CE1 /* AVBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVBaseView.h; sourceTree = "<group>"; };
+		9056150F1B32E32E00C24CE1 /* AVBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVBaseView.m; sourceTree = "<group>"; };
+		905615111B32E33D00C24CE1 /* AVTilesMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTilesMenuView.h; sourceTree = "<group>"; };
+		905615121B32E33D00C24CE1 /* AVTilesMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVTilesMenuView.m; sourceTree = "<group>"; };
+		905615141B32E37000C24CE1 /* AVTilesMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVTilesMenuView.xib; sourceTree = "<group>"; };
 		A676E571CF2C57D9A482770F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D169630E4CA1DEDE00A34E59 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +108,7 @@
 		90451B721B329FC700AE0845 /* Avira */ = {
 			isa = PBXGroup;
 			children = (
+				9056150B1B32E30000C24CE1 /* Views */,
 				90451B9A1B32AA9D00AE0845 /* ViewControllers */,
 				90451B991B32A06000AE0845 /* Storyboards */,
 				90451B771B329FC700AE0845 /* AppDelegate.h */,
@@ -202,6 +211,34 @@
 			path = Avira;
 			sourceTree = "<group>";
 		};
+		9056150B1B32E30000C24CE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9056150D1B32E32100C24CE1 /* AVBaseView */,
+				9056150C1B32E30000C24CE1 /* AVTilesMenuView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9056150C1B32E30000C24CE1 /* AVTilesMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				905615141B32E37000C24CE1 /* AVTilesMenuView.xib */,
+				905615111B32E33D00C24CE1 /* AVTilesMenuView.h */,
+				905615121B32E33D00C24CE1 /* AVTilesMenuView.m */,
+			);
+			path = AVTilesMenuView;
+			sourceTree = "<group>";
+		};
+		9056150D1B32E32100C24CE1 /* AVBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				9056150E1B32E32E00C24CE1 /* AVBaseView.h */,
+				9056150F1B32E32E00C24CE1 /* AVBaseView.m */,
+			);
+			path = AVBaseView;
+			sourceTree = "<group>";
+		};
 		B5D43F4F903A9AAE25D25057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905615151B32E37000C24CE1 /* AVTilesMenuView.xib in Resources */,
 				90451B841B329FC700AE0845 /* LaunchScreen.xib in Resources */,
 				905614FB1B32BD8100C24CE1 /* ReusableVC.storyboard in Resources */,
 				90451B811B329FC700AE0845 /* Images.xcassets in Resources */,
@@ -358,8 +396,10 @@
 				90451B791B329FC700AE0845 /* AppDelegate.m in Sources */,
 				90451B9F1B32AB1600AE0845 /* AVBaseViewController.m in Sources */,
 				90451B761B329FC700AE0845 /* main.m in Sources */,
+				905615101B32E32E00C24CE1 /* AVBaseView.m in Sources */,
 				905615011B32CE7E00C24CE1 /* AVTilesMenuViewController.m in Sources */,
 				905615081B32D0ED00C24CE1 /* Constants.m in Sources */,
+				905615131B32E33D00C24CE1 /* AVTilesMenuView.m in Sources */,
 				905615051B32CF8B00C24CE1 /* AVAviraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -78,7 +78,7 @@ const CGFloat MenuBarEnlargeAmount = 30;
 {
     NSMutableArray* viewControllers = [NSMutableArray array];
     
-    AVAviraViewController *aviraVC = [AVAviraViewController initFromStoryboard];
+    AVAviraViewController *aviraVC = [AVAviraViewController newInstance];
     [viewControllers addObject:aviraVC];
     
     for (int i=0; i<3; i++) {

@@ -15,9 +15,13 @@
 
 @implementation AVTilesMenuViewController
 
-+ (instancetype)initFromStoryboard
++ (instancetype)newInstance
 {
-    return [[UIStoryboard storyboardWithName:kReusableVCStoryboardName bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AVTilesMenuViewController"];
+    AVTilesMenuViewController *newSelf = [[[self class] alloc] init];
+    newSelf.tilesView = [[[NSBundle mainBundle] loadNibNamed:@"AVTilesMenuView" owner:self options:nil] firstObject];
+    newSelf.view = newSelf.tilesView;
+    [newSelf setup];
+    return newSelf;
 }
 
 - (void)viewDidLoad {
@@ -30,14 +34,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setup
+{
+    
 }
-*/
 
 @end

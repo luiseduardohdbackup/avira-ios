@@ -7,9 +7,12 @@
 //
 
 #import "AVBaseViewController.h"
+#import "AVTilesMenuView.h"
 
 @interface AVTilesMenuViewController : AVBaseViewController
 
-+ (instancetype)initFromStoryboard;
+@property (nonatomic,strong) AVTilesMenuView *tilesView;
+
++ (instancetype)newInstance;
 
 @end
