@@ -8,6 +8,8 @@
 
 #import "AVMenuBarViewController.h"
 
+const CGFloat MenuBarEnlargeAmount = 30;
+
 @interface AVMenuBarViewController () <RMPScrollingMenuBarControllerDelegate>
 
 @end
@@ -24,11 +26,17 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self enlargeMenuBarBy:MenuBarEnlargeAmount];
     [self putMenuBarAtBottom];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)AVsetup
@@ -47,11 +55,16 @@
     for(int i = 0; i < 10; i++){
         UIViewController* vc = [[UIViewController alloc] init];
         vc.view.backgroundColor = [UIColor colorWithWhite:0.3+0.05*i alpha:1.0];
-//        vc.message = [NSString stringWithFormat:@"Message for No.%ld", (long)i+1];
         [viewControllers addObject:vc];
     }
     
     [self setViewControllers:viewControllers];
+}
+
+- (void)enlargeMenuBarBy:(CGFloat)pixels
+{
+    [self.menuBar setFrame:CGRectMake(0, 0, self.menuBar.frame.size.width, self.menuBar.frame.size.height+pixels)];
+    [self.containerView setFrame:CGRectMake(0, self.containerView.frame.origin.y+pixels, self.containerView.frame.size.width, self.containerView.frame.size.height-pixels)];
 }
 
 - (void)putMenuBarAtBottom
@@ -66,7 +79,8 @@
                            menuBarItemAtIndex:(NSInteger)index
 {
     RMPScrollingMenuBarItem* item = [[RMPScrollingMenuBarItem alloc] init];
-    item.title = [NSString stringWithFormat:@"Title %02ld", (long)(index+1)];
+    
+    item.title = [NSString stringWithFormat:@"Title %02ld oihaodiasjdioad", (long)(index+1)];
     
     // Customize appearance of menu bar item.
     UIButton* button = item.button;
