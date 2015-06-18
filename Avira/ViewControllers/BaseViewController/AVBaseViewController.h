@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AVBaseViewController.h
 //  Avira
 //
 //  Created by Chinh Le on 6/18/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AVBaseViewController : UIViewController
 
 @end
-

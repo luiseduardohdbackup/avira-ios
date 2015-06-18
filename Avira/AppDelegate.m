@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AVMenuBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self setup];
+    
     return YES;
 }
 
@@ -40,6 +43,20 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Private Methods
+
+- (void)setup
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    AVMenuBarViewController *mainVC = [[AVMenuBarViewController alloc] init];
+    
+    UINavigationController* naviController;
+    naviController = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    self.window.rootViewController = naviController;
+    [self.window makeKeyAndVisible];
 }
 
 @end

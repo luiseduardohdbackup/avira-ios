@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Podfile">
+      location = "group:Avira.xcodeproj">
    </FileRef>
    <FileRef
-      location = "self:Avira.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

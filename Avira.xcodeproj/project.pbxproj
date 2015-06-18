@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		90451B761B329FC700AE0845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B751B329FC700AE0845 /* main.m */; };
 		90451B791B329FC700AE0845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B781B329FC700AE0845 /* AppDelegate.m */; };
-		90451B7C1B329FC700AE0845 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B7B1B329FC700AE0845 /* ViewController.m */; };
 		90451B7F1B329FC700AE0845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90451B7D1B329FC700AE0845 /* Main.storyboard */; };
 		90451B811B329FC700AE0845 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90451B801B329FC700AE0845 /* Images.xcassets */; };
 		90451B841B329FC700AE0845 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90451B821B329FC700AE0845 /* LaunchScreen.xib */; };
 		90451B901B329FC700AE0845 /* AviraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B8F1B329FC700AE0845 /* AviraTests.m */; };
+		90451B9F1B32AB1600AE0845 /* AVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B9E1B32AB1600AE0845 /* AVBaseViewController.m */; };
+		90451BA21B32AB2700AE0845 /* AVMenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451BA11B32AB2700AE0845 /* AVMenuBarViewController.m */; };
+		B83CDBCB7BB88D18010AB7DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D169630E4CA1DEDE00A34E59 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +29,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25EC3621C2CBE58CAB0AC22D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		90451B701B329FC700AE0845 /* Avira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90451B741B329FC700AE0845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90451B751B329FC700AE0845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90451B771B329FC700AE0845 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90451B781B329FC700AE0845 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		90451B7A1B329FC700AE0845 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		90451B7B1B329FC700AE0845 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		90451B7E1B329FC700AE0845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90451B801B329FC700AE0845 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90451B831B329FC700AE0845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		90451B891B329FC700AE0845 /* AviraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90451B8E1B329FC700AE0845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90451B8F1B329FC700AE0845 /* AviraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviraTests.m; sourceTree = "<group>"; };
+		90451B9D1B32AB1600AE0845 /* AVBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVBaseViewController.h; sourceTree = "<group>"; };
+		90451B9E1B32AB1600AE0845 /* AVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVBaseViewController.m; sourceTree = "<group>"; };
+		90451BA01B32AB2700AE0845 /* AVMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMenuBarViewController.h; sourceTree = "<group>"; };
+		90451BA11B32AB2700AE0845 /* AVMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMenuBarViewController.m; sourceTree = "<group>"; };
+		A676E571CF2C57D9A482770F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D169630E4CA1DEDE00A34E59 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83CDBCB7BB88D18010AB7DB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,8 @@
 				90451B721B329FC700AE0845 /* Avira */,
 				90451B8C1B329FC700AE0845 /* AviraTests */,
 				90451B711B329FC700AE0845 /* Products */,
+				FED018F4EC0A5317F8BD59FC /* Pods */,
+				B5D43F4F903A9AAE25D25057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +91,10 @@
 		90451B721B329FC700AE0845 /* Avira */ = {
 			isa = PBXGroup;
 			children = (
+				90451B9A1B32AA9D00AE0845 /* ViewControllers */,
+				90451B991B32A06000AE0845 /* Storyboards */,
 				90451B771B329FC700AE0845 /* AppDelegate.h */,
 				90451B781B329FC700AE0845 /* AppDelegate.m */,
-				90451B7A1B329FC700AE0845 /* ViewController.h */,
-				90451B7B1B329FC700AE0845 /* ViewController.m */,
-				90451B7D1B329FC700AE0845 /* Main.storyboard */,
 				90451B801B329FC700AE0845 /* Images.xcassets */,
 				90451B821B329FC700AE0845 /* LaunchScreen.xib */,
 				90451B731B329FC700AE0845 /* Supporting Files */,
@@ -119,6 +128,58 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		90451B991B32A06000AE0845 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				90451B7D1B329FC700AE0845 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		90451B9A1B32AA9D00AE0845 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				90451B9C1B32AB0300AE0845 /* BaseViewController */,
+				90451B9B1B32AAE500AE0845 /* MenuBarController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		90451B9B1B32AAE500AE0845 /* MenuBarController */ = {
+			isa = PBXGroup;
+			children = (
+				90451BA01B32AB2700AE0845 /* AVMenuBarViewController.h */,
+				90451BA11B32AB2700AE0845 /* AVMenuBarViewController.m */,
+			);
+			path = MenuBarController;
+			sourceTree = "<group>";
+		};
+		90451B9C1B32AB0300AE0845 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90451B9D1B32AB1600AE0845 /* AVBaseViewController.h */,
+				90451B9E1B32AB1600AE0845 /* AVBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		B5D43F4F903A9AAE25D25057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D169630E4CA1DEDE00A34E59 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED018F4EC0A5317F8BD59FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A676E571CF2C57D9A482770F /* Pods.debug.xcconfig */,
+				25EC3621C2CBE58CAB0AC22D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90451B931B329FC700AE0845 /* Build configuration list for PBXNativeTarget "Avira" */;
 			buildPhases = (
+				B98605C61BC3EE65A0B3B7F8 /* Check Pods Manifest.lock */,
 				90451B6C1B329FC700AE0845 /* Sources */,
 				90451B6D1B329FC700AE0845 /* Frameworks */,
 				90451B6E1B329FC700AE0845 /* Resources */,
+				CBE9216992E674BA5D9C21F4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +277,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B98605C61BC3EE65A0B3B7F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE9216992E674BA5D9C21F4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90451B6C1B329FC700AE0845 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90451B7C1B329FC700AE0845 /* ViewController.m in Sources */,
+				90451BA21B32AB2700AE0845 /* AVMenuBarViewController.m in Sources */,
 				90451B791B329FC700AE0845 /* AppDelegate.m in Sources */,
+				90451B9F1B32AB1600AE0845 /* AVBaseViewController.m in Sources */,
 				90451B761B329FC700AE0845 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +347,7 @@
 				90451B7E1B329FC700AE0845 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		90451B821B329FC700AE0845 /* LaunchScreen.xib */ = {
@@ -345,6 +443,7 @@
 		};
 		90451B941B329FC700AE0845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A676E571CF2C57D9A482770F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Avira/Info.plist;
@@ -355,6 +454,7 @@
 		};
 		90451B951B329FC700AE0845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EC3621C2CBE58CAB0AC22D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Avira/Info.plist;
@@ -416,6 +516,7 @@
 				90451B951B329FC700AE0845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90451B961B329FC700AE0845 /* Build configuration list for PBXNativeTarget "AviraTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +525,7 @@
 				90451B981B329FC700AE0845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
