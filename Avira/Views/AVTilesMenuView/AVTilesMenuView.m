@@ -8,14 +8,42 @@
 
 #import "AVTilesMenuView.h"
 
+@interface AVTilesMenuView()
+
+@property (nonatomic,strong) IBOutletCollection(UIImageView) NSArray *imageViewCollection;
+@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray *sectionHeaderCollection;
+@property (nonatomic,strong) IBOutletCollection(UILabel) NSArray *sectionDescriptionCollection;
+
+@end
+
 @implementation AVTilesMenuView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)configureViewWithImages:(NSArray *)images withHeaders:(NSArray *)headers withDescriptions:(NSArray *)descriptions
+{
+    for (int i=0; i<[self.imageViewCollection count]; i++) {
+        UIImage *image = images[i];
+        NSString *header = headers[i];
+        NSString *description = descriptions[i];
+        
+        for (UIImageView *imageView in self.imageViewCollection) {
+            if (imageView.tag == i) {
+                imageView.image = image;
+                break;
+            }
+        }
+        
+        for (UILabel *sectionHeader in self.sectionHeaderCollection) {
+            if (sectionHeader.tag == i) {
+                sectionHeader.text = header;
+            }
+        }
+        
+        for (UILabel *sectionDescription in self.sectionDescriptionCollection) {
+            if (sectionDescription.tag == i) {
+                sectionDescription.text = description;
+            }
+        }
+    }
 }
-*/
 
 @end

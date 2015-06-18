@@ -26,7 +26,7 @@
 
 - (void)setup
 {
-    self.tilesView.section1Label.text = @"zz";
+
 }
 
 /*

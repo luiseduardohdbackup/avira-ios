@@ -10,6 +10,6 @@
 
 @interface AVTilesMenuView : AVBaseView
 
-@property (weak, nonatomic) IBOutlet UILabel *section1Label;
+- (void)configureViewWithImages:(NSArray *)images withHeaders:(NSArray *)headers withDescriptions:(NSArray *)descriptions;
 
 @end
