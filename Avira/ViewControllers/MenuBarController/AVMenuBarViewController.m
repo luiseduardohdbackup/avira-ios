@@ -7,6 +7,7 @@
 //
 
 #import "AVMenuBarViewController.h"
+#import "AVAviraViewController.h"
 
 const CGFloat MenuBarEnlargeAmount = 30;
 
@@ -26,6 +27,11 @@ const CGFloat MenuBarEnlargeAmount = 30;
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
     [self enlargeMenuBarBy:MenuBarEnlargeAmount];
     [self putMenuBarAtBottom];
 }
@@ -50,15 +56,7 @@ const CGFloat MenuBarEnlargeAmount = 30;
     //menuController.menuBar.showsIndicator = NO;
     //menuController.menuBar.showsSeparatorLine = NO;
     
-    // Set ViewControllers for menu bar controller
-    NSMutableArray* viewControllers = [NSMutableArray array];
-    for(int i = 0; i < 10; i++){
-        UIViewController* vc = [[UIViewController alloc] init];
-        vc.view.backgroundColor = [UIColor colorWithWhite:0.3+0.05*i alpha:1.0];
-        [viewControllers addObject:vc];
-    }
-    
-    [self setViewControllers:viewControllers];
+    [self setViewControllers:[self createChildViewControllers]];
 }
 
 - (void)enlargeMenuBarBy:(CGFloat)pixels
@@ -72,6 +70,25 @@ const CGFloat MenuBarEnlargeAmount = 30;
     CGFloat menuBarY = self.view.bounds.size.height - self.menuBar.frame.size.height;
     [self.menuBar setFrame:CGRectMake(0, menuBarY, self.menuBar.frame.size.width, self.menuBar.frame.size.height)];
     [self.containerView setFrame:CGRectMake(0, 0, self.containerView.frame.size.width, self.containerView.frame.size.height)];
+}
+
+#pragma mark - Menu choices creation
+
+- (NSArray *)createChildViewControllers
+{
+    NSMutableArray* viewControllers = [NSMutableArray array];
+    
+    
+    
+    for (int i=0; i<5; i++) {
+        UIViewController *vc = [[UIViewController alloc] init];
+        [viewControllers addObject:vc];
+    }
+    
+    AVAviraViewController *aviraVC = [AVAviraViewController initFromStoryboard];
+    [viewControllers addObject:aviraVC];
+    
+    return [viewControllers copy];
 }
 
 #pragma mark - RMPScrollingMenuBarControllerDelegate methods
@@ -110,15 +127,5 @@ const CGFloat MenuBarEnlargeAmount = 30;
 {
     NSLog(@"did cancel %@", viewController);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		90451B761B329FC700AE0845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B751B329FC700AE0845 /* main.m */; };
 		90451B791B329FC700AE0845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B781B329FC700AE0845 /* AppDelegate.m */; };
-		90451B7F1B329FC700AE0845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90451B7D1B329FC700AE0845 /* Main.storyboard */; };
 		90451B811B329FC700AE0845 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90451B801B329FC700AE0845 /* Images.xcassets */; };
 		90451B841B329FC700AE0845 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90451B821B329FC700AE0845 /* LaunchScreen.xib */; };
 		90451B901B329FC700AE0845 /* AviraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B8F1B329FC700AE0845 /* AviraTests.m */; };
 		90451B9F1B32AB1600AE0845 /* AVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451B9E1B32AB1600AE0845 /* AVBaseViewController.m */; };
 		90451BA21B32AB2700AE0845 /* AVMenuBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90451BA11B32AB2700AE0845 /* AVMenuBarViewController.m */; };
+		905614FB1B32BD8100C24CE1 /* ReusableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905614FA1B32BD8100C24CE1 /* ReusableVC.storyboard */; };
+		905615011B32CE7E00C24CE1 /* AVTilesMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615001B32CE7E00C24CE1 /* AVTilesMenuViewController.m */; };
+		905615051B32CF8B00C24CE1 /* AVAviraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615041B32CF8B00C24CE1 /* AVAviraViewController.m */; };
+		905615081B32D0ED00C24CE1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 905615071B32D0ED00C24CE1 /* Constants.m */; };
 		B83CDBCB7BB88D18010AB7DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D169630E4CA1DEDE00A34E59 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +38,6 @@
 		90451B751B329FC700AE0845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90451B771B329FC700AE0845 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90451B781B329FC700AE0845 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		90451B7E1B329FC700AE0845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90451B801B329FC700AE0845 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90451B831B329FC700AE0845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		90451B891B329FC700AE0845 /* AviraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,13 @@
 		90451B9E1B32AB1600AE0845 /* AVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVBaseViewController.m; sourceTree = "<group>"; };
 		90451BA01B32AB2700AE0845 /* AVMenuBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMenuBarViewController.h; sourceTree = "<group>"; };
 		90451BA11B32AB2700AE0845 /* AVMenuBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMenuBarViewController.m; sourceTree = "<group>"; };
+		905614FA1B32BD8100C24CE1 /* ReusableVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReusableVC.storyboard; sourceTree = "<group>"; };
+		905614FF1B32CE7E00C24CE1 /* AVTilesMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTilesMenuViewController.h; sourceTree = "<group>"; };
+		905615001B32CE7E00C24CE1 /* AVTilesMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVTilesMenuViewController.m; sourceTree = "<group>"; };
+		905615031B32CF8B00C24CE1 /* AVAviraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAviraViewController.h; sourceTree = "<group>"; };
+		905615041B32CF8B00C24CE1 /* AVAviraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAviraViewController.m; sourceTree = "<group>"; };
+		905615061B32D09C00C24CE1 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		905615071B32D0ED00C24CE1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		A676E571CF2C57D9A482770F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D169630E4CA1DEDE00A34E59 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +116,8 @@
 			children = (
 				90451B741B329FC700AE0845 /* Info.plist */,
 				90451B751B329FC700AE0845 /* main.m */,
+				905615061B32D09C00C24CE1 /* Constants.h */,
+				905615071B32D0ED00C24CE1 /* Constants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,7 +142,7 @@
 		90451B991B32A06000AE0845 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				90451B7D1B329FC700AE0845 /* Main.storyboard */,
+				905614FA1B32BD8100C24CE1 /* ReusableVC.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -139,6 +150,8 @@
 		90451B9A1B32AA9D00AE0845 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				905615021B32CF7A00C24CE1 /* Avira */,
+				905614FC1B32CE2E00C24CE1 /* ReuseableVC */,
 				90451B9C1B32AB0300AE0845 /* BaseViewController */,
 				90451B9B1B32AAE500AE0845 /* MenuBarController */,
 			);
@@ -161,6 +174,32 @@
 				90451B9E1B32AB1600AE0845 /* AVBaseViewController.m */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		905614FC1B32CE2E00C24CE1 /* ReuseableVC */ = {
+			isa = PBXGroup;
+			children = (
+				905614FE1B32CE7200C24CE1 /* AVTilesMenuVC */,
+			);
+			path = ReuseableVC;
+			sourceTree = "<group>";
+		};
+		905614FE1B32CE7200C24CE1 /* AVTilesMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				905614FF1B32CE7E00C24CE1 /* AVTilesMenuViewController.h */,
+				905615001B32CE7E00C24CE1 /* AVTilesMenuViewController.m */,
+			);
+			path = AVTilesMenuVC;
+			sourceTree = "<group>";
+		};
+		905615021B32CF7A00C24CE1 /* Avira */ = {
+			isa = PBXGroup;
+			children = (
+				905615031B32CF8B00C24CE1 /* AVAviraViewController.h */,
+				905615041B32CF8B00C24CE1 /* AVAviraViewController.m */,
+			);
+			path = Avira;
 			sourceTree = "<group>";
 		};
 		B5D43F4F903A9AAE25D25057 /* Frameworks */ = {
@@ -262,8 +301,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90451B7F1B329FC700AE0845 /* Main.storyboard in Resources */,
 				90451B841B329FC700AE0845 /* LaunchScreen.xib in Resources */,
+				905614FB1B32BD8100C24CE1 /* ReusableVC.storyboard in Resources */,
 				90451B811B329FC700AE0845 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +358,9 @@
 				90451B791B329FC700AE0845 /* AppDelegate.m in Sources */,
 				90451B9F1B32AB1600AE0845 /* AVBaseViewController.m in Sources */,
 				90451B761B329FC700AE0845 /* main.m in Sources */,
+				905615011B32CE7E00C24CE1 /* AVTilesMenuViewController.m in Sources */,
+				905615081B32D0ED00C24CE1 /* Constants.m in Sources */,
+				905615051B32CF8B00C24CE1 /* AVAviraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,15 +383,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		90451B7D1B329FC700AE0845 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90451B7E1B329FC700AE0845 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		90451B821B329FC700AE0845 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
