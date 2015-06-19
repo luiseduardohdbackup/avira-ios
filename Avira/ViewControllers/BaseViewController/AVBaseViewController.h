@@ -10,4 +10,6 @@
 
 @interface AVBaseViewController : UIViewController
 
++ (instancetype)loadFromStoryboard:(NSString *)storyboardName withBundle:(NSBundle *)bundle;
+
 @end

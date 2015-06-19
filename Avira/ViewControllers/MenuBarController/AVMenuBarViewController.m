@@ -8,6 +8,7 @@
 
 #import "AVMenuBarViewController.h"
 #import "AVAviraViewController.h"
+#import "AVTimelineViewController.h"
 
 const CGFloat MenuBarEnlargeAmount = 30;
 
@@ -80,6 +81,9 @@ const CGFloat MenuBarEnlargeAmount = 30;
     
     AVAviraViewController *aviraVC = [AVAviraViewController newInstance];
     [viewControllers addObject:aviraVC];
+    
+    AVTimelineViewController *timelineVC = [AVTimelineViewController loadFromStoryboard:@"Timeline" withBundle:nil];
+    [viewControllers addObject:timelineVC];
     
     for (int i=0; i<3; i++) {
         UIViewController *vc = [[UIViewController alloc] init];

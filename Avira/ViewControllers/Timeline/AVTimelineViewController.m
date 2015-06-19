@@ -1,18 +1,18 @@
 //
-//  AVBaseViewController.m
+//  AVTimelineViewController.m
 //  Avira
 //
-//  Created by Chinh Le on 6/18/15.
+//  Created by Chinh Le on 6/19/15.
 //  Copyright (c) 2015 2359 Media. All rights reserved.
 //
 
-#import "AVBaseViewController.h"
+#import "AVTimelineViewController.h"
 
-@interface AVBaseViewController ()
+@interface AVTimelineViewController ()
 
 @end
 
-@implementation AVBaseViewController
+@implementation AVTimelineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-+ (instancetype)loadFromStoryboard:(NSString *)storyboardName withBundle:(NSBundle *)bundle
-{
-    return [[UIStoryboard storyboardWithName:storyboardName bundle:bundle ? : [NSBundle mainBundle]] instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
 }
 
 /*
