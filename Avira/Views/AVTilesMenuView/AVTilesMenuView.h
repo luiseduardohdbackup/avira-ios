@@ -8,8 +8,18 @@
 
 #import "AVBaseView.h"
 
+@interface AVTilesViewData : NSObject
+
+@property (nonatomic,strong) UIImage *tileImage;
+@property (nonatomic,copy) NSString *tileHeader;
+@property (nonatomic,copy) NSString *tileDescription;
+
+- (instancetype)initWithImage:(UIImage *)image withHeader:(NSString *)header withDescription:(NSString *)description;
+
+@end
+
 @interface AVTilesMenuView : AVBaseView
 
-- (void)configureViewWithImages:(NSArray *)images withHeaders:(NSArray *)headers withDescriptions:(NSArray *)descriptions;
+- (void)configureViewWithTiles:(NSArray *)tiles;
 
 @end

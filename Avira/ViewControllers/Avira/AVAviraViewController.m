@@ -26,7 +26,21 @@
 
 - (void)setup
 {
-
+    NSMutableArray *tiles = [NSMutableArray new];
+    
+    AVTilesViewData *data = [[AVTilesViewData alloc] initWithImage:nil withHeader:@"Life & Pulse" withDescription:@"Find your balance and enhance your well being"];
+    [tiles addObject:data];
+    
+    data = [[AVTilesViewData alloc] initWithImage:nil withHeader:@"Soul of Wellness" withDescription:@"Avira's wellness facilities form the ..."];
+    [tiles addObject:data];
+    
+    data = [[AVTilesViewData alloc] initWithImage:nil withHeader:@"Floor Plans" withDescription:@"Each Garden Terrace home is designed to..."];
+    [tiles addObject:data];
+    
+    data = [[AVTilesViewData alloc] initWithImage:nil withHeader:@"Avira Map" withDescription:@"The Estate represents the residential .."];
+    [tiles addObject:data];
+    
+    [self.tilesView configureViewWithTiles:tiles];
 }
 
 /*
