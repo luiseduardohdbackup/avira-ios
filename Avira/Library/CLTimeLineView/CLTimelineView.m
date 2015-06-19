@@ -14,6 +14,9 @@ static double const defaultDateSliderViewFrameRatio = 0.35;
 @interface CLTimelineView()
 
 @property (nonatomic,strong) CLTimelineDateSliderView *dateSliderView;
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSLayoutConstraint *dateSliderViewWidthConstraint;
 
 @end
 
@@ -52,15 +55,37 @@ static double const defaultDateSliderViewFrameRatio = 0.35;
     [self addSubview:self.dateSliderView];
     self.dateSliderView.backgroundColor = [UIColor redColor];
     
-    [self adjustDateSliderViewFrameWithRatio:defaultDateSliderViewFrameRatio];
+    self.tableView = [[UITableView alloc] init];
+    [self addSubview:self.tableView];
+    self.tableView.backgroundColor = [UIColor blackColor];
+    
+    // Add constraints for those 2
+    self.dateSliderView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    NSDictionary *viewsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:self.dateSliderView,@"dateSliderView",self.tableView, @"tableView", nil];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[dateSliderView]-0-[tableView]-0-|"
+                                                                 options:0 metrics:nil views:viewsDictionary]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[dateSliderView]-0-|"
+                                                                 options:0 metrics:nil views:viewsDictionary]];
+    [self adjustDateSliderViewWidthWithRatio:defaultDateSliderViewFrameRatio];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
 }
 
 #pragma mark - View setup
 
-- (void)adjustDateSliderViewFrameWithRatio:(double)ratio
+- (void)adjustDateSliderViewWidthWithRatio:(double)ratio
 {
-    CGRect dateSliderFrame = CGRectMake(0, 0, self.bounds.size.width * ratio, self.bounds.size.height);
-    self.dateSliderView.frame = dateSliderFrame;
+//    CGRect dateSliderFrame = CGRectMake(0, 0, self.bounds.size.width * ratio, self.bounds.size.height);
+//    self.dateSliderView.frame = dateSliderFrame;
+    [self removeConstraint:self.dateSliderViewWidthConstraint];
+    self.dateSliderViewWidthConstraint = [NSLayoutConstraint constraintWithItem:self.dateSliderView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeWidth multiplier:ratio constant:0];
+    [self addConstraint:self.dateSliderViewWidthConstraint];
+    
 }
 
 @end
